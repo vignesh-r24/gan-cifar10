@@ -1,0 +1,29 @@
+# Ignore archives
+*.tar
+
+# Include selected images only
+*/gen_images/*
+!*/gen_images/image_e_50.png
+!*/gen_images/image_e_100.png
+!*/gen_images/image_e_200.png
+!*/gen_images/image_e_300.png
+!*/gen_images/image_e_400.png
+!*/gen_images/image_e_500.png
+
+# Include selected models
+*/gen_models/*
+!*/gen_models/g_model_e_100.h5
+!*/gen_models/g_model_e_200.h5
+!*/gen_models/g_model_e_300.h5
+!*/gen_models/g_model_e_400.h5
+!*/gen_models/g_model_e_500.h5
+
+
+# Ignore personal notes
+guidelines.txt
+
+# Ignore virtual env
+venv
+
+# Ignore ipynb checkpoints
+*checkpoint.ipynb
