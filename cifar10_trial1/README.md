@@ -1,6 +1,6 @@
-### Trial 1
+## Trial 1
 
-#### Model Architecure
+### Model Architecure
 1. Discriminator:
    - Input dimension: (32,32,3)
    - 2 2D Convolutional layers - [ filters: 128x(3,3), stride=(2,2), padding='same' ]
@@ -10,7 +10,7 @@
    - Loss: binary_crossentropy
    - Optimizer: Adam(lr=0.0002, beta_1=0.5)
    - Output dimension: (1,1)
-
+<br>
 
 2. Generator:
    - Input dimension: 100 (latent input dimension)
@@ -21,8 +21,9 @@
    - Each Transpose Convolutional layer is followed by BatchNormalization and LeakyReLU(alpha=0.2)
    - The output layer is a 2D Convolutional layer - [ filters: 3x(5,5), padding='same', activation='sigmoid' ]
    - Output dimension: (32,32,3)
+<br>
 
-#### Results
+### Results
 - Epoch 50<br>
    <kbd><img src="gen_images/image_e_50.png"></kbd>
 
